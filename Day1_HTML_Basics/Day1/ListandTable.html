@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Lists and Tables</title>
+    
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+        }
+        
+        .heading{
+            text-align: center;
+            background-color: whitesmoke;
+        }
+        nav{
+            text-align: center;
+            background-color: black;
+            color: antiquewhite;
+        }
+
+        .list{
+            display: inline;
+        }
+
+        .olist, .unor, .des{
+            padding-left: 100px;
+            display: inline-block;
+            
+        }
+
+        .des dd{
+            margin: 0;
+        }
+
+
+        .tab{
+            display: inline;
+        }
+
+        .w{
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        
+
+        
+
+        
+        .tab table, tr, th, td{
+            
+            border: 1px solid;
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        p{
+            text-align: center;
+            background-color: black;
+            color: whitesmoke;
+        }
+
+       
+        
+
+       
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">HTML Lists and Tables</h1>
+    <nav>
+        Home &nbsp; &nbsp; &nbsp; About &nbsp; &nbsp; &nbsp; Contact
+    </nav>
+    <div class="w">
+    <div class = "list">
+
+        <div class = "olist">
+            <h1>Ordered List:</h1>
+            <ol>
+                <li >Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </div>
+        <br>
+        <div class="unor">
+            <h2>UnOrdered List</h2>
+            <ul>
+                <li>Bullet 1</li>
+                <li>Bullet 1</li>
+                <li>Bullet 1</li>
+            </ul>
+        </div>
+        <br>
+        <div class = "des">
+            <h2>Descriptive List</h2>
+            <dl>
+                <dt><strong>Term 1</strong></dt>
+                <dd>Definition</dd>
+                <dt><strong>Term 2</strong></dt>
+                <dd>Definition</dd>
+                <dt><strong>Term 3</strong></dt>
+                <dd>Definition</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="tab">
+        <h2>Simple Table:</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Occupation</th>
+            </tr>
+            <tr><td>John</td> <td>28</td>
+            <td>NY</td>
+            <td>Developer</td></tr>
+            </tr>
+            <tr><td>Jane</td> <td>38</td>
+            <td>London</td>
+            <td>Designer</td></tr>
+            <tr><td>Tom</td> <td>22</td>
+            <td>Toronto</td>
+            <td>Student</td></tr>
+        </table>
+    </div>
+</div>
+    <p> &copy 2024 Training Website</p>
+    
+</body>
+</html>
