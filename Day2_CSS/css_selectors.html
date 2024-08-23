@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleForcss_selectors.css">
+</head>
+<body>
+    <h1 id="heading">CSS Selectors Practice</h1>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div id="universal-selector">
+        <h2>Universal Selector Example</h2>
+        <p>This paragraph is styled using the universal selector (*) which applies to all elements</p>
+    </div>
+    <div id="selector-types">
+        <h2>Type Selector Example</h2>
+        <h3>Headings and Paragraphs</h3>
+        <p>This is an example of a paragraph styled by the type selector</p>
+    </div>
+    <div class="class-selector">
+        <h2>Class Selector Example</h2>
+        <p>This section is styled using a class selector named highlight</p>
+    </div>
+    <div id="id-type-selector" style="color: tomato;">
+        <h2>ID Selector Example</h2>
+        <p>This section is styled using an ID selector named #unique.</p>
+    </div>
+    <div id="attribute-selector">
+        <h2>Attribute Selector Example</h2>
+        <form >
+            Type your name: <input type="text" placeholder="Your Name">
+        </form>
+    </div>
+    <div class = "descendant-selector">
+        <h2>Decendent Selector Example</h2>
+        <p>This paragraph is inside a div and styled by a descendant selector (div p).</p>
+    </div>
+    <div class= "child-selector">
+        <h2>Child Selector Example</h2>
+        <ul>
+            <li>First child item styled using child selector (ul > li).</li>
+            <li>Another child item in the list.</li>
+        </ul>
+    </div>
+    <div id = "adjacent-selector">
+        <h2>Adjacent Sibling Selector Example</h2>
+        <h1>This is a heading</h1>
+        <p>This paragraph is styled as an adjacent sibling to the above heading (h2+p).</p>
+
+    </div>
+    <div class="general-sibling">
+        <h2>General Sibling Selector Example</h2>
+        <h1>Another heading</h1>
+        <p>This paragraph is styled as a general sibling to the heading (h2~p).</p>
+        <p>Another sibling paragraph styled the same way</p>
+    </div>
+    <p class="footer">&copy 2024 CSS Selectors Practice</p>
+</body>
+</html>

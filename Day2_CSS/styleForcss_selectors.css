@@ -1,0 +1,104 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#heading{
+    text-align: center;
+    color: #333;
+}
+
+nav li{
+    display: inline;
+    color:white;
+    padding: 15px;
+}
+
+nav{
+    display: block;
+    text-align: center;
+    background-color: #333;
+    padding: 2px;
+}
+
+#universal-selector{
+    margin: 20px;
+    background:  rgb(232, 237, 243);
+    padding: 10px;
+    color: #333;
+    
+}
+
+
+#selector-types{
+    margin: 20px;
+    background:  rgb(232, 237, 243);
+    padding: 10px;
+    color: #333;
+}
+
+.class-selector{
+    margin: 20px;
+    background: yellow;
+    padding: 10px;
+    color: #333;
+}
+
+#id-type-selector{
+    color:tomato;
+    margin: 20px;
+    background:  rgb(232, 237, 243);
+    padding: 10px;
+}
+
+div[id="attribute-selector"]{
+    margin: 20px;
+    background:  rgb(232, 237, 243);
+    padding: 10px;
+    color: #333;
+
+}
+
+input[type=text]{
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.descendant-selector {
+    margin: 20px;
+    background:  rgb(232, 237, 243);
+    padding: 10px;
+    color: #333;
+
+}
+
+
+.child-selector{
+    margin: 20px;
+    background:  rgb(232, 237, 243);
+    padding: 10px;
+    color: #333;
+}
+
+#adjacent-selector{
+    margin: 20px;
+    background:  rgb(232, 237, 243);
+    padding: 10px;
+    color: #333;
+}
+
+.general-sibling{
+    margin: 20px;
+    background:  rgb(232, 237, 243);
+    padding: 10px;
+    color: #333;
+}
+
+.footer{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+
