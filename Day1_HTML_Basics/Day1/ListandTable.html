@@ -18,7 +18,13 @@
         nav{
             text-align: center;
             background-color: black;
-            color: antiquewhite;
+            padding: 8px;
+        }
+
+        nav li{
+            display: inline;
+            color: white;
+            padding-left: 40px;
         }
 
         .list{
@@ -27,7 +33,7 @@
 
         .olist, .unor, .des{
             padding-left: 100px;
-            display: inline-block;
+            display: block;
             
         }
 
@@ -60,6 +66,7 @@
         }
 
         p{
+            padding: 8px;
             text-align: center;
             background-color: black;
             color: whitesmoke;
@@ -75,7 +82,9 @@
 <body>
     <h1 class="heading">HTML Lists and Tables</h1>
     <nav>
-        Home &nbsp; &nbsp; &nbsp; About &nbsp; &nbsp; &nbsp; Contact
+       <li>Home</li>
+       <li>Services</li>
+       <li>Contact</li>
     </nav>
     <div class="w">
     <div class = "list">
@@ -88,7 +97,6 @@
                 <li>Item 3</li>
             </ol>
         </div>
-        <br>
         <div class="unor">
             <h2>UnOrdered List</h2>
             <ul>
@@ -97,7 +105,6 @@
                 <li>Bullet 1</li>
             </ul>
         </div>
-        <br>
         <div class = "des">
             <h2>Descriptive List</h2>
             <dl>
