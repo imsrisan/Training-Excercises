@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+                font-family: "Poppins", sans-serif;
+                margin:0;
+        }
+        
+        .layout{
+            display: grid;
+            grid-template-columns: minmax(100px 400px) 1fr;
+            grid-template-areas: "header header"
+            "sidebar mainContent"
+            "footer footer";
+            grid-template-rows: 9vh 84vh 7vh;
+            gap:5px;
+
+        }
+
+
+        header{
+            grid-area: header;
+            color: white;
+            background-color: lightgreen;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+            color: #333;
+            padding-left: 8px;
+            padding-top: 10px;
+            background-color: #dbd7d7;
+            
+        }
+        .main{
+            grid-area: mainContent;
+            color: #333;
+            padding-top: 10px;
+            padding-left: 8px;
+            background-color: #c5c4c4;
+        }
+
+        .footer{
+            grid-area: footer;
+            color: white;
+            background-color: lightgreen;
+            text-align: center;
+            font-size: 23px;
+        }
+
+
+
+       
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="layout">
+    <header>
+        <h1 class = "title">Grid Layout Example</h1>
+    </header>
+    <aside class="sidebar">Sector</aside>
+    <div class="main">Main Content Area</div>
+    <footer class="footer">
+        Footer: &copy 2024 Grid Layout Example
+        
+    </footer>
+    </div>
+</body>
+</html>
