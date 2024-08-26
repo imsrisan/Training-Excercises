@@ -70,8 +70,11 @@ input[type=text]{
     margin: 20px;
     background:  rgb(232, 237, 243);
     padding: 10px;
-    color: #333;
+    color :#333;
+}
 
+.descendant-selector div p {
+    color: #333;
 }
 
 
@@ -79,9 +82,11 @@ input[type=text]{
     margin: 20px;
     background:  rgb(232, 237, 243);
     padding: 10px;
-    color: #333;
 }
 
+.child-selector ul > li{
+    color: #333;
+}
 #adjacent-selector{
     margin: 20px;
     background:  rgb(232, 237, 243);
@@ -89,11 +94,20 @@ input[type=text]{
     color: #333;
 }
 
+#adjacent-selector h1 + p{
+    color: #333;
+
+}
+
 .general-sibling{
     margin: 20px;
     background:  rgb(232, 237, 243);
     padding: 10px;
     color: #333;
+}
+
+.general-sibling h2 ~ p{
+    color: rgb(11, 12, 12);
 }
 
 .footer{
