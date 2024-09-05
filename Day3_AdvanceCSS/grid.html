@@ -13,24 +13,79 @@
                 margin:0;
         }
         
-        .layout{
-            display: grid;
-            grid-template-columns: minmax(100px 400px) 1fr;
-            grid-template-areas: "header header"
-            "sidebar mainContent"
-            "footer footer";
-            grid-template-rows: 80px 510px 50px;
-            gap:5px;
-
+        @media (max-width: 1024px){
+            .layout{
+                display: grid;
+                grid-template-columns: minmax(100px 400px) 1fr;
+                grid-template-areas: "header header"
+                "sidebar mainContent"
+                "footer footer";
+                grid-template-rows: 10px 510px 10px;
+                gap:5px;
+    
+            }
+        }
+        @media (max-width: 786px){
+            .layout{
+                display: grid;
+                grid-template-columns: minmax(100px 400px) 1fr;
+                grid-template-areas: "header header"
+                "sidebar mainContent"
+                "footer footer";
+                grid-template-rows: 50px 430px 50px;
+                gap:5px;
+               
+    
+            }
+        }
+        @media (min-width: 480px){
+            .layout{
+                display: grid;
+                grid-template-columns: minmax(100px 400px) 1fr;
+                grid-template-areas: "header header"
+                "sidebar mainContent"
+                "footer footer";
+                grid-template-rows: 50px 450px 50px;
+                gap:5px;
+    
+            }
+        }
+        @media (min-width: 300px){
+            .layout{
+                display: grid;
+                grid-template-columns: minmax(100px 400px) 1fr;
+                grid-template-areas: "header header"
+                "sidebar mainContent"
+                "footer footer";
+                grid-template-rows: 150px 300px 150px;
+                gap:5px;
+    
+            }
+        }
+        @media (max-width: 300px){
+            .layout{
+                display: grid;
+                grid-template-columns: minmax(100px 400px) 1fr;
+                grid-template-areas: "header header"
+                "sidebar mainContent"
+                "footer footer";
+                grid-template-rows: 150px 300px 150px;
+                gap:5px;
+                
+            }
         }
 
 
         header{
+            display: grid;
             grid-area: header;
             color: white;
             background-color: lightgreen;
             text-align: center;
-            padding: 10px;
+           
+            align-items: center;
+            
+            
         }
 
         .sidebar{
@@ -50,11 +105,13 @@
         }
 
         .footer{
+            display: grid;
             grid-area: footer;
             color: white;
             background-color: lightgreen;
             text-align: center;
             font-size: 23px;
+            align-items: center;
         }
     </style>
 </head>

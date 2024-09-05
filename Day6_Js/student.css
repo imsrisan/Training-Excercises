@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    width:450px;
+    border: 2px solid lightblue;
+    border-radius: 2px;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.student-details{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.student-details input{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#add-students{
+    margin-bottom: 10px;
+}
+
+
+.student-details button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(100, 197, 230);
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.answer{
+    text-align: center;
+}
+
+.answer button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(100, 197, 230);
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+}
