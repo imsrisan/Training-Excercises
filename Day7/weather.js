@@ -6,7 +6,7 @@ const table = document.getElementById("table");
 searchCity.addEventListener("click",fetchData);
     
     async function fetchData(){    
-    const cityName = document.getElementById("city-name").value.trim();
+    const cityName = document.getElementById("city-name").value.trim().toLowerCase();
     try{
 
 
@@ -106,6 +106,7 @@ searchCity.addEventListener("click",fetchData);
 
     }
     catch(error){
-        console.log(`could not fetch details for ${cityName}`);
+        `could not fetch details for ${cityName}`
+        document.getElementById("error").textContent = `could not fetch details for ${cityName}`;
     }
 }

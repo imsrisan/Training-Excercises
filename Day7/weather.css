@@ -24,7 +24,7 @@ body{
     margin-bottom: 10px;
 }
 
-.sub-container .getInput, h2, table{
+.sub-container .getInput, h2, table, p{
     padding-right: 15px;
     padding-left: 15px;
 }
