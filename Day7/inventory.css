@@ -26,15 +26,15 @@ body{
 
 .sub-container input{
     width: 95%;
-    padding: 5px;
+    padding: 10px;
     margin: 10px auto 10px;
     border-radius: 4px;
     border: 1.5px solid grey;
 }
 
 .sub-container #add-product{
-    width: 99%;
-    padding: 5px;
+    width: 101%;
+    padding: 10px;
     background-color: skyblue;
     color: white;
     border-radius: 4px;
