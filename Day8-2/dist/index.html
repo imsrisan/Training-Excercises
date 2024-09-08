@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-</body>
+    <div class="container">
+        <div class="sub-container">
+            
+            <div class="add-user">
+                <div class="top" style="display: flex ; justify-content: space-between;">
+                    <h2>Add User</h2>
+                    <div>
+                        <input type="text" placeholder="Search By Id or Email" > <button id="find">find</button>
+                    </div>
+                </div>
+                <hr id="line-1">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <label for="role">Role:</label>
+                <select name="role" id="role">
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+                </select>
+                <button id="add">Add User</button>
+            </div>
+            <p id="user-exist"></p>
+            <h2>User List</h2>
+            <hr id="line-2">
+            <div id="list-of-users">
+
+            <div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body> 
 </html>

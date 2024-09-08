@@ -1,0 +1,105 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 750px;
+    border : 2px solid lightblue;
+    border-radius: 3px;
+}
+
+.sub-container{
+    border: 5px solid rgb(225, 246, 253);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.top input{
+    margin-top: 19.92px;
+    padding: 5px;
+}
+
+.sub-container input:not(.top input){
+    width: 130px;
+    border-radius: 3px;
+    padding: 6px;
+    border: 0.5px solid grey;
+    margin-right: 5px;
+}
+
+.sub-container #role{
+    border: 0.5px solid grey;
+    padding-right: 80px;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+
+#add, #find{
+    padding: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 10px;
+    border-radius: 3px;
+    background-color: hsl(240, 100%, 50%);
+    color: white;
+    border: 0px;
+}
+
+h2{
+    margin-bottom: 0px;
+    
+}
+
+hr{
+    margin-bottom: 25px;
+    border-top: 0px solid grey;
+}
+
+#list-of-users{
+    display: flex;
+    flex-direction: column;
+}
+
+.child{
+    display: flex;
+    width: 100%;
+    background-color: rgb(215, 236, 255);
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.user-detail{
+    display: flex;
+    gap: 10px;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.user-detail div{
+    width: 50%;
+    text-wrap: nowrap;
+}
+
+.modify{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.modify button{
+    padding: 5px 10px 5px;
+    border-radius: 3px;
+    background-color: hsl(240, 100%, 50%);
+    color: white;
+    border: 0px;
+}
+
+#user-exist{
+    color: red;
+}
+
+
