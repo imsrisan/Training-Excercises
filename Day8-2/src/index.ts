@@ -149,20 +149,18 @@ findButton.addEventListener("click", function () {
     }
 
     if (user) {
-        userList.innerHTML = '';
         const child = document.createElement("div");
         child.classList.add("child");
 
         const list = document.createElement("div");
         list.classList.add("user-detail");
 
-        list.innerHTML = `<div>${user.id}. ${user.name}</div>
-        <div>${user.email}</div>
-        <div>${user.role}</div>`;
-
+        list.innerHTML = `<div>${user.id}. Name: ${user.name}  Email: ${user.email} Role: ${user.role}</div>`
+        
         child.appendChild(list);
 
-        userList.appendChild(child);
+        window.alert(child.textContent);
+
     } else {
         userExist.textContent = "User Not Found";
         userExist.style.display = 'block';
