@@ -104,6 +104,7 @@ class UserManager{
         } else {
             userExist.textContent = "User Not Found";
         }
+        userExist.textContent = "";
 
         
     }
@@ -171,10 +172,11 @@ const addUser = document.getElementById("add") as HTMLButtonElement;
 
 addUser.addEventListener("click", function(){
 
-    if(userEmail.value === "" || userName.value === ""){
-        userExist.textContent = "Enter the credentials";
+    if(userEmail.value === "" || userName.value === "" || !userEmail.value.includes("@")){
+        userExist.textContent = "Enter the Credentials Correctly!!";
         return;
     }
+    userExist.textContent = "";
 
     UserManager.addUser();
 })
