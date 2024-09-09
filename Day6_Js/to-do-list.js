@@ -142,3 +142,21 @@ listOfTask.addEventListener("click", function (e) {
     taskItem.remove();
   }
 });
+
+const completeAll = document.getElementById("complete-all");
+
+completeAll.addEventListener("click", function(){
+
+  const tasks = document.querySelectorAll(".task-item");
+
+  tasks.forEach(task => {
+    const c = task.querySelector(".task-checkbox input");
+
+    if(c.checked){
+      const td = task.querySelector(".task-description");
+      console.log(td.textContent);
+       task.remove();
+    }
+  })  
+})
+

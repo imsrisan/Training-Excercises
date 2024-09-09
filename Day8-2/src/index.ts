@@ -161,11 +161,12 @@ findButton.addEventListener("click", function () {
         child.appendChild(list);
 
         window.alert(child.textContent);
-
+        userExist.textContent = "";
     } else {
         userExist.textContent = "User Not Found";
         userExist.style.display = 'block';
     }
+    
 });
 
 const addUser = document.getElementById("add") as HTMLButtonElement;

@@ -15,7 +15,12 @@
   <body>
     <div class="container">
       <div class="sub-container">
-        <h1>To-Do List</h1>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin:20px 10px 20px;">
+          <h1>To-Do List</h1>
+          <div>
+            <button id="complete-all" style="background-color: red; padding: 5px; color: white; border: 0px; cursor: pointer; border-radius: 3px;">Delete All Completed</button>
+          </div>
+        </div>
         <div style="display: flex; flex-direction: column; margin-left: 30px; margin-right: 30px;">
             <div>
               <input type="text" placeholder="Enter new task" id="task" />

@@ -119,6 +119,7 @@ findButton.addEventListener("click", function () {
         list.innerHTML = `<div>${user.id}. Name: ${user.name}  Email: ${user.email} Role: ${user.role}</div>`;
         child.appendChild(list);
         window.alert(child.textContent);
+        userExist.textContent = "";
     }
     else {
         userExist.textContent = "User Not Found";
