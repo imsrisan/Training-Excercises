@@ -1,0 +1,52 @@
+body{
+    background-color: pink;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 35%;
+    padding: 20px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info input{
+    flex-grow: 2;
+    padding: 10px;
+}
+
+.info button{
+    flex-grow: 1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.detail-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.detail-info p {
+    margin-bottom: 10px;
+}
+
+.err{
+    text-align: center;
+    color: red;
+}

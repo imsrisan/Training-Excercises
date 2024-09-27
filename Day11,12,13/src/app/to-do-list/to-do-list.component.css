@@ -1,0 +1,100 @@
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+}
+
+.container{
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    height: auto;
+    width: 40%;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+
+#err{
+    color: red;
+    /* text-align: center; */
+}
+
+#data{
+    display: flex;
+}
+#data input{
+     padding: 10px;
+     flex-grow: 2;
+}
+
+#data button{
+    padding: 12px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+#data{
+    margin-bottom: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px;
+}
+
+li{
+    /* width: auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#leftp{
+    word-break: break-all;
+    width: 200px;
+    /* text-align: center; */
+}
+
+#right{
+    text-wrap: nowrap;
+}
+
+#right button{
+    /* margin: 10px; */
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.task-description{
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:1024px) {
+
+    .container{
+        width: 70%;
+    }    
+}
+
+@media screen and (max-width:480px){
+    
+    .container{
+        width: 90%;
+    }
+}
+

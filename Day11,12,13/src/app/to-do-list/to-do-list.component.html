@@ -1,0 +1,22 @@
+<main>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div id="data">
+            <input type="text" placeholder="Enter the task" [(ngModel)] = "taskname">
+            <button (click)="isEdit ? updateTask() : addTask()"> {{ isEdit ? 'Update' : 'Add' }} </button>
+        </div>
+        <p id="err">{{ err }}</p>
+        <ul class="tasks">
+            <li *ngFor="let task of tasks">
+                <input type="checkbox" [checked]="task.isCompleted" (change) = "toggleCompletion(task)">
+                <p [ngClass] = "{'task-description' : task.isCompleted}" id="leftp">
+                    {{task.taskname}}
+                </p>
+                <div id="right">
+                    <button (click) = "editTask(task)">Edit</button>
+                    <button (click) = "deleteTask(task.taskname)">Delete</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</main>

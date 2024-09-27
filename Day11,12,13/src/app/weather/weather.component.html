@@ -1,0 +1,30 @@
+<main>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="info">
+            <input type="text" placeholder="Enter the city name" [(ngModel)] = "cityName">
+            <button (click)="searchCity()">Search</button>
+        </div>
+        <p class="err">{{ notFound }}</p>
+        <div class="details">
+            <div class="detail-info">
+                <p>City Name: </p>
+                <p> {{ city }}</p>
+            </div>
+            <div class="detail-info">
+                <p>Temperature:  </p>
+                <p>{{ cityTem }}</p>
+            </div>
+            <div class="detail-info">
+                <p>Humdity: </p>
+                <p> {{ cityHumi }}</p>
+            </div>
+            <div class="detail-info">
+                <p>Weather icon: </p>
+                <p><img *ngIf="weatherIcon" [src]="weatherIcon" alt="Weather Icon">
+                </p>
+
+            </div>
+        </div>
+    </div>
+</main>
